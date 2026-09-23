@@ -215,3 +215,54 @@ body{overflow-x:hidden}
     background-position:center center;
   }
 }
+
+
+/* ===== Premium leadership experience ===== */
+.leadership{background:var(--cream);overflow:hidden}
+.leadership .wrap{max-width:1280px}
+.lead-hero{
+  position:relative;min-height:390px;margin-bottom:28px;padding:70px 55px;
+  display:grid;grid-template-columns:1fr 190px;gap:50px;align-items:center;color:#fff;
+  background:linear-gradient(90deg,rgba(5,18,27,.96),rgba(5,18,27,.72) 58%,rgba(5,18,27,.48)),
+  url("https://images.unsplash.com/photo-1771909713995-d793a0c93660?auto=format&fit=crop&fm=jpg&q=82&w=1800");
+  background-size:cover;background-position:center;
+}
+.lead-hero h2{font:500 clamp(45px,5vw,72px)/1.02 "Playfair Display",serif;margin:22px 0}
+.lead-hero h2 em{color:#e0bb78}
+.lead-hero>div:first-child>p:last-child{max-width:700px;color:#d5dcde;line-height:1.75;font-size:15px}
+.lead-pillars{border-left:1px solid var(--gold);padding-left:24px;display:flex;flex-direction:column;gap:12px}
+.lead-pillars span{font-size:10px;letter-spacing:.25em;color:#eee1c7}
+.leaders{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;background:none;margin-top:0}
+.leader-card,.leader-strength{min-height:365px;padding:38px 34px;background:#f7f4ec;border:1px solid rgba(201,166,107,.35);box-shadow:0 12px 35px rgba(7,19,29,.06);position:relative;overflow:hidden}
+.leader-card:after{content:"";position:absolute;inset:auto -20% -70% 20%;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(201,166,107,.10),transparent 68%)}
+.leader-avatar{width:118px;height:118px;border:2px solid #d9b66f;border-radius:50%;display:grid;place-items:center;margin:0 auto 22px;background:linear-gradient(145deg,#fffdf7,#e8e2d4)}
+.leader-avatar i{width:92px;height:92px;border:1px solid rgba(155,117,61,.35);border-radius:50%;display:grid;place-items:center;color:#9b753d;font:500 30px "Playfair Display";font-style:normal}
+.leader-card h3{text-align:center;font:500 29px "Playfair Display";margin:0}
+.leader-role{text-align:center;color:#a17735!important;text-transform:uppercase;letter-spacing:.22em;font-size:9px!important;margin:9px 0 0!important}
+.leader-line{display:block;width:44px;height:1px;background:var(--gold);margin:18px auto}
+.leader-desc{max-width:310px;margin:0 auto;color:#657073!important;line-height:1.65;font-size:13px!important;text-align:center}
+.leader-card small{display:block;margin-top:20px;text-align:center;color:#7c7f78;letter-spacing:.18em;font-size:8px}
+.leader-strength{background:linear-gradient(145deg,#07131d,#0d2b38);color:#fff;border-color:rgba(201,166,107,.55);display:flex;flex-direction:column;justify-content:center}
+.leader-strength .eyebrow{color:#cdb37f}
+.leader-strength h3{font:500 42px/1.03 "Playfair Display";margin:18px 0 30px}
+.leader-strength h3 em{color:#dfb86f}
+.leader-strength>div{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(201,166,107,.3);padding-top:20px}
+.leader-strength span{text-align:center;font-size:8px;letter-spacing:.2em;color:#e4d3ae}
+@media(max-width:650px){
+  .leadership{padding:72px 0}
+  .lead-hero{min-height:480px;margin:0 0 14px;padding:42px 28px;grid-template-columns:1fr;gap:28px;background-position:center}
+  .lead-hero h2{font-size:43px;line-height:1.02;margin:18px 0}
+  .lead-hero>div:first-child>p:last-child{font-size:13px;line-height:1.7}
+  .lead-pillars{border-left:1px solid var(--gold);padding-left:18px;gap:8px}
+  .leaders{grid-template-columns:1fr 1fr;gap:10px}
+  .leader-card,.leader-strength{min-height:330px;padding:28px 14px}
+  .leader-avatar{width:88px;height:88px;margin-bottom:16px}
+  .leader-avatar i{width:70px;height:70px;font-size:23px}
+  .leader-card h3{font-size:22px;line-height:1.05}
+  .leader-role{font-size:7px!important;letter-spacing:.14em;line-height:1.5}
+  .leader-desc{font-size:10px!important;line-height:1.55}
+  .leader-card small{font-size:6px;line-height:1.5;letter-spacing:.12em}
+  .leader-strength{grid-column:1/-1;min-height:300px;padding:30px 24px}
+  .leader-strength h3{font-size:38px}
+}
+@media(max-width:380px){.leaders{grid-template-columns:1fr}.leader-strength{grid-column:auto}}
