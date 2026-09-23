@@ -104,15 +104,29 @@ export default function HomePage() {
 
       <section id="leadership" className="leadership">
         <div className="wrap">
-          <div className="lead-head">
-            <p className="eyebrow dark">LEADERSHIP</p>
-            <h2>One vision.<br /><em>Shared commitment.</em></h2>
-            <p>HexaRoot Ventures brings together founders and strategic partners working toward a common long-term vision.</p>
+          <div className="lead-hero">
+            <div>
+              <p className="eyebrow">OUR TEAM</p>
+              <h2>Building Together<br /><em>for a Bigger Tomorrow.</em></h2>
+              <p>A team of experienced professionals united by a common vision — to create lasting value through strategic investments, community development, and world-class sports infrastructure.</p>
+            </div>
+            <div className="lead-pillars"><span>PEOPLE</span><span>PARTNERSHIP</span><span>PROGRESS</span></div>
           </div>
           <div className="leaders">
             {partners.map(([initials, name, role]) => (
-              <div key={name}><i>{initials}</i><h3>{name}</h3><p>{role}</p></div>
+              <article className="leader-card" key={name}>
+                <div className="leader-avatar"><i>{initials}</i></div>
+                <h3>{name}</h3><p className="leader-role">{role}</p>
+                <span className="leader-line"></span>
+                <p className="leader-desc">{name === 'Pratik Patel' ? 'Driven by a passion for community, sports, and long-term value creation.' : name === 'Nilpesh Patel' ? 'Bringing operational excellence and strategic growth to every opportunity.' : name === 'Jugal Chokshi' ? 'Focused on project execution, partnerships, and community impact.' : name === 'Krunal Patel' ? 'Bringing strategic insight and investment expertise to fuel sustainable growth.' : 'Committed to long-term value and building strong future opportunities.'}</p>
+                <small>{name === 'Pratik Patel' ? 'LEAD · BUILD · SCALE' : name === 'Nilpesh Patel' ? 'OPERATE · OPTIMIZE · GROW' : name === 'Jugal Chokshi' ? 'EXECUTE · COLLABORATE · DELIVER' : name === 'Krunal Patel' ? 'STRATEGIZE · INVEST · EXPAND' : 'INVEST · INNOVATE · CREATE IMPACT'}</small>
+              </article>
             ))}
+            <article className="leader-strength">
+              <p className="eyebrow">OUR STRENGTH</p>
+              <h3>Different<br /><em>Expertise.</em><br />A Shared Vision.</h3>
+              <div><span>PEOPLE</span><span>PURPOSE</span><span>PROGRESS</span></div>
+            </article>
           </div>
         </div>
       </section>
