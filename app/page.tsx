@@ -5,7 +5,7 @@ const partners = [
   ['Pratik Patel', 'Founder & CEO', '/pratik-patel.jpg'],
   ['Nilpesh Patel', 'Co-Founder', '/nilpesh-patel.jpg'],
   ['Jugal Chokshi', 'Co-Founder', '/jugal-chokshi.jpg'],
-  ['Krunal Patel', 'Strategic Partner & Investor', ''],
+  ['Krunal Patel', 'Strategic Partner & Investor', '/krunal-patel.jpg'],
   ['Alpit Shah', 'Strategic Partner & Investor', '/alpit-shah.jpg'],
 ]
 
