@@ -15,7 +15,7 @@ export default function HomePage() {
       <header className="site-header">
         <div className="nav-shell">
           <a href="#home" className="brand" aria-label="HexaRoot Ventures home">
-            <Image className="brand-logo" src="/hexaroot-logo.webp" alt="HexaRoot Ventures" width={170} height={58} priority />
+            <Image className="brand-logo" src="/hexaroot-logo.webp?v=2" alt="HexaRoot Ventures" width={170} height={58} priority />
           </a>
           <nav>
             <a href="#about">About</a>
@@ -45,7 +45,7 @@ export default function HomePage() {
           </div>
 
           <div className="hero-card">
-            <Image className="hero-logo" src="/hexaroot-logo.webp" alt="HexaRoot Ventures" width={390} height={390} priority />
+            <Image className="hero-logo" src="/hexaroot-logo.webp?v=2" alt="HexaRoot Ventures" width={390} height={390} priority />
             <p>ROOTED IN OPPORTUNITY</p>
             <strong>Built for tomorrow.</strong>
           </div>
@@ -129,7 +129,7 @@ export default function HomePage() {
 
       <footer>
         <div className="wrap foot">
-          <a href="#home" className="footer-brand"><Image className="footer-logo" src="/hexaroot-logo.webp" alt="HexaRoot Ventures" width={130} height={60} /></a>
+          <a href="#home" className="footer-brand"><Image className="footer-logo" src="/hexaroot-logo.webp?v=2" alt="HexaRoot Ventures" width={130} height={60} /></a>
           <span>Invest. Build. Scale.</span>
           <span>© {new Date().getFullYear()} HexaRoot Ventures</span>
         </div>
