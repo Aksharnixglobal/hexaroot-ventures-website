@@ -1,30 +1,28 @@
 import SiteHeader from '../components/SiteHeader';import SiteFooter from '../components/SiteFooter'
 
-const team=[['PRATIK PATEL','FOUNDER & CEO'],['NILPESH PATEL','CO-FOUNDER'],['JUGAL CHOKSHI','CO-FOUNDER'],['KRUNAL PATEL','STRATEGIC PARTNER'],['ALPIT SHAH','STRATEGIC PARTNER']]
+const team=[
+  ['Pratik Patel','Founder & CEO','/pratik-patel.jpg','Driven by a passion for community, sports, and long-term value creation.','LEAD · BUILD · SCALE'],
+  ['Nilpesh Patel','Co-Founder','/nilpesh-patel.jpg','Bringing operational excellence and strategic growth to every opportunity.','OPERATE · OPTIMIZE · GROW'],
+  ['Jugal Chokshi','Co-Founder','/jugal-chokshi.jpg','Focused on project execution, partnerships, and community impact.','EXECUTE · COLLABORATE · DELIVER'],
+  ['Krunal Patel','Strategic Partner & Investor','/krunal-patel.jpg','Bringing strategic insight and investment expertise to fuel sustainable growth.','STRATEGIZE · INVEST · EXPAND'],
+  ['Alpit Shah','Strategic Partner & Investor','/alpit-family.jpg','Committed to long-term value and building strong future opportunities.','CONNECT · INVEST · BUILD']
+]
 
 export default function Leadership(){
-  return <main className="leadership-legacy">
+  return <main className="leadership-modern">
     <SiteHeader/>
-    <section className="leadership-legacy-hero">
-      <div className="wrap">
-        <div className="section-title">
-          <div>
-            <p className="eyebrow dark">LEADERSHIP</p>
-            <h1>People behind<br/><em>the vision.</em></h1>
-          </div>
-          <a className="text-link" href="/leadership">MEET THE TEAM ↗</a>
-        </div>
+    <section className="leadership-banner">
+      <div className="leadership-banner-image">
+        <div className="leadership-banner-copy"><span>PEOPLE</span><span>PARTNERSHIP</span><span>PROGRESS</span></div>
       </div>
     </section>
-    <section className="leadership-legacy-team">
-      <div className="wrap">
-        <div className="team-strip">
-          {team.map(([name,role])=><div key={name}>{name}<br/><small>{role}</small></div>)}
-        </div>
-      </div>
-    </section>
-    <section className="leadership-legacy-space"/>
-    <section className="dark-panel"><div className="wrap"><p className="eyebrow">ONE TEAM · SHARED VISION</p><h2>Partnership is part of<br/><em>the platform.</em></h2></div></section>
+    <section className="leadership-modern-grid"><div className="wrap"><div className="leadership-cards">
+      {team.map(([name,role,photo,desc,tag])=><article className="leadership-card" key={name}>
+        <div className="leadership-portrait"><img src={photo} alt={name} loading="lazy"/></div>
+        <div className="leadership-card-body"><h2>{name}</h2><p className="leadership-role">{role}</p><span className="leadership-rule"/><p className="leadership-desc">{desc}</p><small>{tag}</small></div>
+      </article>)}
+    </div></div></section>
+    <section className="leadership-closing"><div className="wrap"><p>ONE TEAM · SHARED VISION</p><h2>Partnership is part of <em>the platform.</em></h2></div></section>
     <SiteFooter/>
   </main>
 }
