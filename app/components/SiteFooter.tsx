@@ -1,0 +1,2 @@
+import Image from 'next/image'
+export default function SiteFooter(){return <footer><div className="wrap foot"><a href="/" className="footer-brand"><Image className="footer-logo" src="/hexaroot-logo.webp?v=3" alt="HexaRoot Ventures" width={130} height={60}/></a><span>Invest. Build. Scale.</span><span>© {new Date().getFullYear()} HexaRoot Ventures</span><span className="site-credit">Website created by <a href="https://aksharnixglobal.com" target="_blank" rel="noopener noreferrer">Aksharnix Global</a></span></div></footer>}
