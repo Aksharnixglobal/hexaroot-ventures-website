@@ -443,3 +443,7 @@ footer{border-top:1px solid rgba(201,166,107,.25)}
 .mobile-menu nav a:last-child{border-bottom:0}
 .mobile-menu .mobile-menu-cta{color:var(--gold);margin-top:4px}
 @media(max-width:850px){.desktop-nav,.desktop-cta{display:none!important}.mobile-menu{display:block}.nav-shell{width:calc(100% - 32px)}}
+
+/* Keep leadership names on one line on mobile */
+@media(max-width:650px){.leadership-card h2{font-size:25px;white-space:nowrap;letter-spacing:-.04em}}
+@media(max-width:430px){.leadership-card h2{font-size:22px}}
