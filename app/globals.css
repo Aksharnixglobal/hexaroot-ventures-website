@@ -364,3 +364,49 @@ footer{border-top:1px solid rgba(201,166,107,.25)}
 @media(max-width:600px){.nav-shell{height:72px}.brand-logo{width:125px!important}.nav-cta{padding:12px 14px;font-size:9px}.corp-hero{padding:80px 0}.corp-hero h1,.inner-hero h1,.project-hero h1{font-size:68px}.hero-lead{font-size:16px}.hero-actions{flex-direction:column;align-items:flex-start}.hero-stat-panel{grid-template-columns:1fr 1fr}.hero-stat-panel div:last-child{grid-column:1/-1}.intro-band,.editorial,.home-focus,.home-team,.contact-page{padding:80px 0}.section-title{display:block}.section-title>.text-link{margin-top:20px}.project-callout{gap:30px}.project-numbers div{padding:35px 20px}.project-numbers b{font-size:52px}.inner-hero,.project-hero{padding:100px 0 80px}.process-row,.facts-grid{grid-template-columns:1fr}.plan-art{min-height:420px}.ground{width:32%;height:25%}.parking{left:34%;width:32%}.timeline-item{grid-template-columns:55px 1fr;gap:20px}.timeline-item h2{font-size:40px}.profile-image{height:380px}.profile-body{padding:28px}.profile-body h2{font-size:40px}.foot{flex-direction:column;align-items:flex-start}.future-band h2{font-size:48px}}
 
 .profile-image img{display:block;width:100%;height:100%;object-fit:cover}.profile-image.family-photo img{object-position:center center}
+
+/* Leadership — premium partner-card composition */
+.leadership-modern{background:var(--paper);color:var(--navy)}
+.leadership-banner{padding:0 0 22px;background:var(--paper)}
+.leadership-banner-image{height:300px;max-width:1240px;margin:0 auto;background:linear-gradient(110deg,rgba(3,15,23,.96),rgba(10,18,22,.82)),url('/hexaroot-logo.webp');background-size:cover;background-position:center;position:relative;display:flex;align-items:center}
+.leadership-banner-image:after{content:"";position:absolute;left:46px;top:48px;bottom:48px;width:1px;background:var(--gold)}
+.leadership-banner-copy{margin-left:76px;display:flex;flex-direction:column;gap:18px;color:#eee7d8;font-size:12px;letter-spacing:.28em}
+.leadership-modern-grid{padding:0 0 80px}
+.leadership-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.leadership-card{background:#f8f4ea;border:1px solid #ddd3bf;text-align:center;min-height:530px;display:flex;flex-direction:column;align-items:center;padding:46px 24px 38px}
+.leadership-portrait{width:142px;height:142px;border-radius:50%;border:3px solid #d7b66c;padding:4px;overflow:hidden;margin:0 auto 27px;flex:none}
+.leadership-portrait img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 20%;border-radius:50%}
+.leadership-card:nth-child(2) .leadership-portrait img{object-position:center 28%}
+.leadership-card:nth-child(3) .leadership-portrait img{object-position:center 22%}
+.leadership-card:nth-child(5) .leadership-portrait{width:142px;height:142px}
+.leadership-card-body{display:flex;flex-direction:column;align-items:center;width:100%}
+.leadership-card h2{font:400 38px Georgia,serif;margin:0 0 10px;letter-spacing:-.025em}
+.leadership-role{font-size:10px;letter-spacing:.18em;color:#9a7b3e;text-transform:uppercase;margin:0}
+.leadership-rule{width:72px;border-top:2px solid #d2b477;margin:29px 0 28px}
+.leadership-desc{font-size:16px;line-height:1.55;color:#707474;max-width:390px;margin:0 auto 34px}
+.leadership-card small{font-size:8px;letter-spacing:.16em;color:#99958d;text-transform:uppercase;margin-top:auto}
+.leadership-closing{background:var(--navy);color:white;padding:90px 0}
+.leadership-closing p{font-size:10px;letter-spacing:.22em;color:var(--gold)}
+.leadership-closing h2{font:400 clamp(42px,6vw,68px) Georgia,serif;margin:22px 0 0}
+.leadership-closing em{color:#aab0ad}
+@media(max-width:650px){
+ .leadership-banner{padding:0 32px 22px}
+ .leadership-banner-image{height:215px}
+ .leadership-banner-image:after{left:46px;top:48px;bottom:48px}
+ .leadership-banner-copy{margin-left:76px;font-size:10px;gap:17px}
+ .leadership-modern-grid{padding-bottom:55px}
+ .leadership-cards{gap:16px}
+ .leadership-card{min-height:530px;padding:46px 18px 34px}
+ .leadership-portrait{width:142px;height:142px;margin-bottom:25px}
+ .leadership-card h2{font-size:30px}
+ .leadership-role{font-size:8px;letter-spacing:.16em}
+ .leadership-desc{font-size:14px;line-height:1.55}
+ .leadership-card small{font-size:7px}
+}
+@media(max-width:430px){
+ .leadership-banner{padding-left:32px;padding-right:32px}
+ .leadership-card{min-height:500px;padding-left:12px;padding-right:12px}
+ .leadership-portrait{width:126px;height:126px}
+ .leadership-card h2{font-size:27px}
+ .leadership-desc{font-size:13px}
+}
