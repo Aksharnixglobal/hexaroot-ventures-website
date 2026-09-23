@@ -4,7 +4,7 @@ import './globals.css'
 const partners = [
   ['Pratik Patel', 'Founder & CEO', '/pratik-patel.jpg'],
   ['Nilpesh Patel', 'Co-Founder', '/nilpesh-patel.jpg'],
-  ['Jugal Chokshi', 'Co-Founder', null],
+  ['Jugal Chokshi', 'Co-Founder', '/jugal-chokshi.jpg'],
   ['Krunal Patel', 'Strategic Partner & Investor', null],
   ['Alpit Shah', 'Strategic Partner & Investor', null],
 ]
