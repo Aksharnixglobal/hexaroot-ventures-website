@@ -1,12 +1,8 @@
-/// <reference types="next" />
-/// <reference types="next/image-types/global" />
-
-// NOTE: This file should not be edited.
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Hexaroot Ventures',
-  description: 'Building the next generation of digital growth and venture value.',
+  title: 'HexaRoot Ventures | Invest. Build. Scale.',
+  description: 'HexaRoot Ventures is a Texas-based venture and development company focused on real estate, sports infrastructure, and long-term opportunities.',
   metadataBase: new URL('https://hexarootventures.com'),
 }
 
