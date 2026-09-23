@@ -182,3 +182,36 @@ body{overflow-x:hidden}
   .feature-copy h2{font-size:36px!important}
   .stats strong{font-size:24px}
 }
+
+
+/* ===== Cricket ground imagery ===== */
+.card.sports{
+  background-image:
+    linear-gradient(180deg,rgba(4,17,25,.12) 0%,rgba(4,17,25,.18) 28%,rgba(4,17,25,.88) 78%,rgba(4,17,25,.98) 100%),
+    url("https://images.unsplash.com/photo-1771909713995-d793a0c93660?auto=format&fit=crop&fm=jpg&q=82&w=1800");
+  background-size:cover;
+  background-position:center;
+}
+.card.sports:before{
+  background:
+    linear-gradient(180deg,rgba(7,19,29,.05),rgba(7,19,29,.12) 35%,rgba(7,19,29,.82) 82%,rgba(7,19,29,.96)),
+    radial-gradient(circle at 50% 18%,rgba(201,166,107,.10),transparent 30%);
+}
+.master{
+  background-image:
+    linear-gradient(180deg,rgba(5,20,29,.20),rgba(5,20,29,.56) 55%,rgba(5,20,29,.92)),
+    url("https://images.unsplash.com/photo-1771909713995-d793a0c93660?auto=format&fit=crop&fm=jpg&q=82&w=1800");
+  background-size:cover;
+  background-position:center;
+}
+.master:before{background:linear-gradient(180deg,rgba(6,19,28,.08),rgba(6,19,28,.30) 45%,rgba(6,19,28,.72));}
+.master-art{background:linear-gradient(180deg,rgba(7,19,29,.12),rgba(7,19,29,.48));backdrop-filter:blur(1px);}
+
+@media(max-width:650px){
+  .card.sports{
+    background-position:center center;
+  }
+  .master{
+    background-position:center center;
+  }
+}
