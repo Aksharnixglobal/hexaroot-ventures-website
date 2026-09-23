@@ -2,11 +2,11 @@ import Image from 'next/image'
 import './globals.css'
 
 const partners = [
-  ['PP', 'Pratik Patel', 'Founder & CEO'],
-  ['NP', 'Nilpesh Patel', 'Co-Founder'],
-  ['JC', 'Jugal Chokshi', 'Co-Founder'],
-  ['KP', 'Krunal Patel', 'Strategic Partner & Investor'],
-  ['AS', 'Alpit Shah', 'Strategic Partner & Investor'],
+  ['Pratik Patel', 'Founder & CEO', '/pratik-patel.jpg'],
+  ['Nilpesh Patel', 'Co-Founder', '/nilpesh-patel.jpg'],
+  ['Jugal Chokshi', 'Co-Founder', null],
+  ['Krunal Patel', 'Strategic Partner & Investor', null],
+  ['Alpit Shah', 'Strategic Partner & Investor', null],
 ]
 
 export default function HomePage() {
@@ -113,9 +113,9 @@ export default function HomePage() {
             <div className="lead-pillars"><span>PEOPLE</span><span>PARTNERSHIP</span><span>PROGRESS</span></div>
           </div>
           <div className="leaders">
-            {partners.map(([initials, name, role]) => (
+            {partners.map(([name, role, photo]) => (
               <article className="leader-card" key={name}>
-                <div className="leader-avatar"><i>{initials}</i></div>
+                {photo ? <Image className="leader-photo" src={photo} alt={name} width={480} height={600} /> : <div className="leader-avatar"><i>{name.split(' ').map((part) => part[0]).join('')}</i></div>}
                 <h3>{name}</h3><p className="leader-role">{role}</p>
                 <span className="leader-line"></span>
                 <p className="leader-desc">{name === 'Pratik Patel' ? 'Driven by a passion for community, sports, and long-term value creation.' : name === 'Nilpesh Patel' ? 'Bringing operational excellence and strategic growth to every opportunity.' : name === 'Jugal Chokshi' ? 'Focused on project execution, partnerships, and community impact.' : name === 'Krunal Patel' ? 'Bringing strategic insight and investment expertise to fuel sustainable growth.' : 'Committed to long-term value and building strong future opportunities.'}</p>
