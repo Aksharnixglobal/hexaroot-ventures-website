@@ -378,13 +378,13 @@ footer{border-top:1px solid rgba(201,166,107,.25)}
 .leadership-banner-image .leadership-banner-copy:after{content:"People who build the platform.";position:absolute;left:390px;top:50%;transform:translateY(-50%);width:420px;color:#f2eee5;font:400 clamp(34px,4vw,56px)/1.02 Georgia,serif;letter-spacing:-.035em}
 @media(max-width:650px){
  .leadership-banner{padding:0 32px 20px}
- .leadership-banner-image{height:255px;background-size:auto,auto,360px;background-position:center,center,82% 50%}
- .leadership-banner-image:before{font-size:72px;right:-20px;bottom:-10px}
- .leadership-banner-image:after{left:34px;top:40px;bottom:40px}
- .leadership-banner-copy{margin-left:58px;gap:13px;font-size:8px;letter-spacing:.25em}
- .leadership-banner-copy span:after{width:20px}
- .leadership-banner-image .leadership-banner-copy:before{top:-31px;font-size:7px}
- .leadership-banner-image .leadership-banner-copy:after{left:0;top:auto;bottom:-72px;width:260px;font-size:25px}
+ .leadership-banner-image{height:300px;background:linear-gradient(110deg,rgba(3,15,23,.98),rgba(7,20,28,.9)),url('/hexaroot-logo.webp');background-size:auto,300px;background-position:center,82% 50%}
+ .leadership-banner-image:before{content:"";display:none}
+ .leadership-banner-image:after{left:34px;top:42px;bottom:42px}
+ .leadership-banner-copy{position:absolute;left:0;top:66px;margin-left:58px;gap:15px;font-size:9px;letter-spacing:.28em}
+ .leadership-banner-copy span:after{width:24px}
+ .leadership-banner-image .leadership-banner-copy:before{top:-34px;font-size:7px}
+ .leadership-banner-image .leadership-banner-copy:after{left:0;top:170px;transform:none;width:235px;font-size:27px;line-height:1.02}
 }
 .leadership-modern-grid{padding:0 0 80px}
 .leadership-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
