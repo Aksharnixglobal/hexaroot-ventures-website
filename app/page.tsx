@@ -115,7 +115,7 @@ export default function HomePage() {
           <div className="leaders">
             {partners.map(([initials, name, role]) => (
               <article className="leader-card" key={name}>
-                <div className="leader-avatar">{name === 'Pratik Patel' ? <img src="/pratik-patel.webp" alt="Pratik Patel" /> : <i>{initials}</i>}</div>
+                <div className="leader-avatar">{name === 'Pratik Patel' ? <img src="/pratik-patel.webp" alt="Pratik Patel" /> : name === 'Nilpesh Patel' ? <img src="/nilpesh-patel.webp" alt="Nilpesh Patel" /> : <i>{initials}</i>}</div>
                 <h3>{name}</h3><p className="leader-role">{role}</p>
                 <span className="leader-line"></span>
                 <p className="leader-desc">{name === 'Pratik Patel' ? 'Driven by a passion for community, sports, and long-term value creation.' : name === 'Nilpesh Patel' ? 'Bringing operational excellence and strategic growth to every opportunity.' : name === 'Jugal Chokshi' ? 'Focused on project execution, partnerships, and community impact.' : name === 'Krunal Patel' ? 'Bringing strategic insight and investment expertise to fuel sustainable growth.' : 'Committed to long-term value and building strong future opportunities.'}</p>
