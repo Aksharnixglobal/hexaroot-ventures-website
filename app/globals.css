@@ -410,3 +410,10 @@ footer{border-top:1px solid rgba(201,166,107,.25)}
  .leadership-card h2{font-size:27px}
  .leadership-desc{font-size:13px}
 }
+
+/* Leadership portrait crop correction */
+.profile-image img{object-position:center top!important}
+@media(max-width:600px){
+  .profile-image{height:430px!important}
+  .profile-image img{object-position:center 8%!important}
+}
