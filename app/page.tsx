@@ -6,7 +6,7 @@ const partners = [
   ['Nilpesh Patel', 'Co-Founder', '/nilpesh-patel.jpg'],
   ['Jugal Chokshi', 'Co-Founder', '/jugal-chokshi.jpg'],
   ['Krunal Patel', 'Strategic Partner & Investor', ''],
-  ['Alpit Shah', 'Strategic Partner & Investor', ''],
+  ['Alpit Shah', 'Strategic Partner & Investor', '/alpit-shah.jpg'],
 ]
 
 export default function HomePage() {
