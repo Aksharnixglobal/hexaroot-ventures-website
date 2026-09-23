@@ -367,10 +367,25 @@ footer{border-top:1px solid rgba(201,166,107,.25)}
 
 /* Leadership — premium partner-card composition */
 .leadership-modern{background:var(--paper);color:var(--navy)}
-.leadership-banner{padding:0 0 22px;background:var(--paper)}
-.leadership-banner-image{height:300px;max-width:1240px;margin:0 auto;background:linear-gradient(110deg,rgba(3,15,23,.96),rgba(10,18,22,.82)),url('/hexaroot-logo.webp');background-size:cover;background-position:center;position:relative;display:flex;align-items:center}
-.leadership-banner-image:after{content:"";position:absolute;left:46px;top:48px;bottom:48px;width:1px;background:var(--gold)}
-.leadership-banner-copy{margin-left:76px;display:flex;flex-direction:column;gap:18px;color:#eee7d8;font-size:12px;letter-spacing:.28em}
+.leadership-banner{padding:0 0 28px;background:var(--paper)}
+.leadership-banner-image{height:340px;max-width:1240px;margin:0 auto;overflow:hidden;background:radial-gradient(circle at 78% 35%,rgba(190,157,83,.13),transparent 28%),linear-gradient(115deg,rgba(2,13,21,.99),rgba(8,23,30,.94)),url('/hexaroot-logo.webp');background-size:auto,auto,520px;background-position:center,center,82% 48%;background-repeat:no-repeat;position:relative;display:flex;align-items:center;border-bottom:1px solid rgba(180,148,76,.3)}
+.leadership-banner-image:before{content:"HEXAROOT";position:absolute;right:-30px;bottom:-40px;font:400 150px/1 Georgia,serif;letter-spacing:-.06em;color:rgba(255,255,255,.025);white-space:nowrap}
+.leadership-banner-image:after{content:"";position:absolute;left:58px;top:52px;bottom:52px;width:1px;background:linear-gradient(to bottom,transparent,var(--gold) 18%,var(--gold) 82%,transparent)}
+.leadership-banner-copy{position:relative;z-index:2;margin-left:92px;display:flex;flex-direction:column;gap:15px;color:#eee7d8;font-size:11px;letter-spacing:.34em;font-weight:500}
+.leadership-banner-copy span{display:flex;align-items:center;gap:16px}
+.leadership-banner-copy span:after{content:"";width:34px;height:1px;background:rgba(212,180,108,.55)}
+.leadership-banner-image .leadership-banner-copy:before{content:"LEADERSHIP";position:absolute;left:0;top:-46px;color:var(--gold);font:500 9px/1 Arial,sans-serif;letter-spacing:.28em}
+.leadership-banner-image .leadership-banner-copy:after{content:"People who build the platform.";position:absolute;left:390px;top:50%;transform:translateY(-50%);width:420px;color:#f2eee5;font:400 clamp(34px,4vw,56px)/1.02 Georgia,serif;letter-spacing:-.035em}
+@media(max-width:650px){
+ .leadership-banner{padding:0 32px 20px}
+ .leadership-banner-image{height:255px;background-size:auto,auto,360px;background-position:center,center,82% 50%}
+ .leadership-banner-image:before{font-size:72px;right:-20px;bottom:-10px}
+ .leadership-banner-image:after{left:34px;top:40px;bottom:40px}
+ .leadership-banner-copy{margin-left:58px;gap:13px;font-size:8px;letter-spacing:.25em}
+ .leadership-banner-copy span:after{width:20px}
+ .leadership-banner-image .leadership-banner-copy:before{top:-31px;font-size:7px}
+ .leadership-banner-image .leadership-banner-copy:after{left:0;top:auto;bottom:-72px;width:260px;font-size:25px}
+}
 .leadership-modern-grid{padding:0 0 80px}
 .leadership-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .leadership-card{background:#f8f4ea;border:1px solid #ddd3bf;text-align:center;min-height:530px;display:flex;flex-direction:column;align-items:center;padding:46px 24px 38px}
