@@ -145,7 +145,7 @@ export default function HomePage() {
         <div className="wrap foot">
           <a href="#home" className="footer-brand"><Image className="footer-logo" src="/hexaroot-logo.webp?v=2" alt="HexaRoot Ventures" width={130} height={60} /></a>
           <span>Invest. Build. Scale.</span>
-          <span>© {new Date().getFullYear()} HexaRoot Ventures</span>
+          <span>© {new Date().getFullYear()} HexaRoot Ventures</span><span className="site-credit">Website created by <a href="https://aksharnixglobal.com" target="_blank" rel="noopener noreferrer">Aksharnix Global</a></span>
         </div>
       </footer>
     </main>
