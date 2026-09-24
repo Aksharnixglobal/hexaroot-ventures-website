@@ -454,3 +454,21 @@ footer{border-top:1px solid rgba(201,166,107,.25)}
 
 .coming-soon{position:absolute;top:28px;left:45px;z-index:2;color:var(--gold);font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
 @media(max-width:650px){.coming-soon{top:26px;left:48px;font-size:9px;letter-spacing:.16em}}
+
+/* HexaField mobile layout refinement */
+@media(max-width:600px){
+ .project-facts{padding:0}
+ .facts-grid{grid-template-columns:1fr 1fr!important}
+ .facts-grid div{padding:34px 22px 38px;min-height:145px;display:flex;flex-direction:column;justify-content:center}
+ .facts-grid b{font-size:48px;line-height:1;margin-bottom:9px}
+ .facts-grid span{font-size:8px;line-height:1.45;letter-spacing:.14em}
+ .facts-grid div:nth-child(2){border-right:0}
+ .facts-grid div:nth-child(3),.facts-grid div:nth-child(4){border-top:1px solid rgba(20,33,42,.18)}
+ .masterplan{padding:70px 0 80px}
+ .masterplan .eyebrow{margin-bottom:4px}
+ .plan-art{height:500px;min-height:500px;margin-top:25px}
+ .ground{width:31%;height:25%;border-width:4px;font-size:9px}
+ .g1{left:7%;top:8%}.g2{right:7%;top:8%}.g3{left:7%;bottom:8%}.g4{right:7%;bottom:8%}
+ .road{top:46%;height:52px;padding:18px 10px;font-size:9px}
+ .parking{left:31%;bottom:4%;width:38%;height:11%;font-size:8px}
+}
