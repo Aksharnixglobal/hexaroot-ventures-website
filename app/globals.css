@@ -449,8 +449,9 @@ footer{border-top:1px solid rgba(201,166,107,.25)}
 @media(max-width:430px){.leadership-card h2{font-size:22px}}
 
 /* Mobile brand name */
-.mobile-brand-name{display:none;color:#f2eee5;font:500 17px Georgia,serif;letter-spacing:.01em;white-space:nowrap}
-@media(max-width:600px){.brand{gap:12px}.brand-logo{width:72px!important;height:52px!important}.mobile-brand-name{display:block}}
+.mobile-brand-name{display:block;color:#f2eee5;font:500 19px Georgia,serif;letter-spacing:.01em;white-space:nowrap}
+@media(max-width:850px){.brand{gap:12px}.brand-logo{width:82px!important;height:52px!important}.mobile-brand-name{font-size:17px}}
+@media(max-width:600px){.brand-logo{width:72px!important;height:52px!important}.mobile-brand-name{font-size:17px}}
 
 .coming-soon{position:absolute;top:28px;left:45px;z-index:2;color:var(--gold);font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
 @media(max-width:650px){.coming-soon{top:26px;left:48px;font-size:9px;letter-spacing:.16em}}
